@@ -34,7 +34,13 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/account-e2e/**/*"]
+      "exclude": [
+        "apps/account-e2e/**/*",
+        "apps/blog-e2e/**/*",
+        "apps/mailer-e2e/**/*",
+        "apps/api-e2e/**/*",
+        "apps/files-store-e2e/**/*"
+      ]
     }
   ],
   "nxCloudAccessToken": "OTQ2MjQ4MDYtYzZkYS00NjNhLWI0MmEtYjA2NmRlZTk2MjEwfHJlYWQtd3JpdGU="
