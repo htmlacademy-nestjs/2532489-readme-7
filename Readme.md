@@ -1,7 +1,7 @@
 # Личный проект «Readme»
 
 * Студент: [Evgeny Ishmenev](https://up.htmlacademy.ru/nodejs-2/7/user/2532489).
-* Наставник: `Some tutor`.
+* Наставник: `Rail Sakhaviev`.
 
 ---
 
