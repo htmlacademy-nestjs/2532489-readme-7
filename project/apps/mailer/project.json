@@ -1,0 +1,24 @@
+{
+  "name": "mailer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mailer/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mailer:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mailer:build:development"
+        },
+        "production": {
+          "buildTarget": "mailer:build:production"
+        }
+      }
+    }
+  }
+}
