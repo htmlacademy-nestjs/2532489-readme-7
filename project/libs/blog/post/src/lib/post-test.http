@@ -1,0 +1,48 @@
+GET http://localhost:3000/api/post/a562260e-9850-4c08-b19f-931913985405
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/post/save
+Content-Type: application/json
+
+{
+  "title": "Test",
+  "text": "Loooonger text",
+  "description": "This text tells us about this post",
+  "type": "text",
+  "is_repost": false,
+  "original_author": "TEST",
+  "current_author": "TEST",
+  "date_of_create": "22.10.2000",
+  "date_of_publish": "22.10.2000",
+  "original_id": "7869898",
+  "status": "is_edited",
+  "tags": ["tag"],
+  "anouncement": "tomorrow",
+  "photo_link": "https://some.address.com",
+  "post_link": "https://some.address.com",
+  "video_link": "https://some.address.com"
+}
+
+###
+
+POST http://localhost:3000/api/post/delete/a562260e-9850-4c08-b19f-931913985405
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/post/65fa65bf-9e82-480c-b205-051ec9d24dc2/comments/add_comment
+Content-Type: application/json
+
+{
+  "text": "Test",
+  "author": "Random Author",
+  "post_id": "d6c874e0-6e6a-413a-85c9-e7bec5eba424"
+}
+
+###
+
+GET http://localhost:3000/api/post/65fa65bf-9e82-480c-b205-051ec9d24dc2/comments
+Content-Type: application/json
+

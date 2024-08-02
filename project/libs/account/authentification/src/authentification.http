@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/auth/154fe65e-887f-420d-b34c-1c0dfd8240b8
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "test@mail.ru",
+  "birthDate": "11.09.1995",
+  "firstName": "John",
+  "lastName": "Stevens",
+  "password": "test_pass"
+}
+
+###
+
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@mail.ru",
+  "password": "test_pass"
+}
